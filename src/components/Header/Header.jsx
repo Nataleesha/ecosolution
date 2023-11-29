@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Menu from "src/components/Menu/Menu";
 
 import Logo from "src/assets/icons/logo.svg?react";
@@ -17,13 +17,31 @@ import {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [white, setWhite] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", listenScrollEvent);
+    }
+
+    return () => window.addEventListener("scroll", listenScrollEvent);
+  }, []);
+
+  // eslint-disable-next-line no-unused-vars
+  function listenScrollEvent(e) {
+    if (window.scrollY > 20) {
+      setWhite(true);
+    } else {
+      setWhite(false);
+    }
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <HeaderContainer>
+    <HeaderContainer className={`${white ? "white" : ""}`}>
       <Container>
         <LogoContainer>
           <Logo /> <LogoName /> <LogoText />

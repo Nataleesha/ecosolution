@@ -8,6 +8,10 @@ export const HeaderContainer = styled.div`
   width: 100%;
   padding-top: 36px;
   background-color: var(--body-background);
+
+  &.white {
+    background-color: #fff;
+  }
 `;
 
 export const Container = styled.div`
@@ -15,7 +19,7 @@ export const Container = styled.div`
   min-width: 360px;
   max-width: ${mobile};
   margin: 0 auto;
-  padding: 0 20px 20px;
+  padding: 0 20px 36px;
 
   display: flex;
   justify-content: space-between;
