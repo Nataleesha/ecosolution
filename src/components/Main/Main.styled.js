@@ -158,4 +158,15 @@ export const ContactItem = styled.li`
 
 export const ImageHolder = styled.div``;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  width: 100%;
+  object-fit: cover;
+
+  @media screen and (min-width: ${tablet}) {
+    height: 348px;
+  }
+
+  @media screen and (min-width: ${desktop}) {
+    height: 524px;
+  }
+`;

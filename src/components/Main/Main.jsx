@@ -41,7 +41,7 @@ const Main = () => {
         <ContactItem>ecosolution © 2023</ContactItem>
       </Contacts>
       <ImageHolder>
-        <Image src={image} alt="wind turbine" />
+        <Image src={image} alt="wind turbine clean energy" />
       </ImageHolder>
     </Section>
   );
