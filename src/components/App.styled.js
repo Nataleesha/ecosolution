@@ -5,9 +5,8 @@ export const Container = styled.div`
   min-width: 360px;
   max-width: ${mobile};
   height: 100vh;
-  border: 1px solid red;
   margin: 0 auto;
-  padding: 36px 20px 0;
+  padding: 0 20px;
 
   @media screen and (min-width: ${tablet}) {
     max-width: none;

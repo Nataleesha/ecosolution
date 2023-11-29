@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
   left: 0;
   width: 100%;
   padding-top: 36px;
+  background-color: var(--body-background);
 `;
 
 export const Container = styled.div`
@@ -14,7 +15,7 @@ export const Container = styled.div`
   min-width: 360px;
   max-width: ${mobile};
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 20px;
 
   display: flex;
   justify-content: space-between;
@@ -40,7 +41,10 @@ export const LogoContainer = styled.div`
   }
 `;
 
-export const NavContainer = styled.div``;
+export const NavContainer = styled.div`
+  display: flex;
+  gap: 12px;
+`;
 
 export const MenuButton = styled.button`
   background-color: var(--primary-light-color);
@@ -57,5 +61,34 @@ export const MenuButton = styled.button`
   &:hover {
     transition: 0.3s ease;
     background-color: var(--primary-color);
+  }
+`;
+
+export const GetInTouch = styled.button`
+  display: none;
+
+  @media screen and (min-width: ${tablet}) {
+    display: inline-flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 500px;
+
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transition: all 0.3s ease;
+      background-color: var(--primary-dark-color);
+      color: var(--primary-color);
+    }
   }
 `;

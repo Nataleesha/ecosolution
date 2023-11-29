@@ -12,7 +12,7 @@ import {
   SocialLink,
 } from "./Menu.styled";
 
-import Arrow from "src/assets/icons/arrow-right.svg?react";
+import Arrow from "src/assets/icons/arrow-menu.svg?react";
 import Facebook from "src/assets/icons/facebook.svg?react";
 import Instagram from "src/assets/icons/instagram.svg?react";
 

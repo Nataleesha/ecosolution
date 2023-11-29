@@ -17,6 +17,8 @@ body {
   background-color: var(--body-background);
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
+  font-style: normal;
+  line-height: normal;
   color: var(--text-color);
 
   margin: 0;
@@ -32,7 +34,13 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
 p {
   margin: 0;
 }
