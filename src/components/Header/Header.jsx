@@ -24,8 +24,14 @@ const Header = () => {
       window.addEventListener("scroll", listenScrollEvent);
     }
 
-    return () => window.addEventListener("scroll", listenScrollEvent);
+    return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
+
+  if (isOpen) {
+    document.body.classList.add("no-overflow");
+  } else {
+    document.body.classList.remove("no-overflow");
+  }
 
   // eslint-disable-next-line no-unused-vars
   function listenScrollEvent(e) {

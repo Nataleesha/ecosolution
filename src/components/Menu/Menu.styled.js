@@ -1,9 +1,46 @@
 import { styled } from "styled-components";
-import { tablet } from "src/variables/breakpoints";
+import { mobile, tablet, desktop } from "src/variables/breakpoints";
 
-export const Container = styled.div`
-  position: absolute;
+export const Overlay = styled.div`
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  opacity: 1;
+  position: fixed;
   top: 0;
+  left: 0;
+  background-color: rgba(23, 61, 51, 0.25);
+
+  &::before {
+    content: "";
+    backdrop-filter: blur(2px);
+  }
+`;
+
+export const OuterContainer = styled.div`
+  z-index: 3;
+  position: relative;
+  height: 100%;
+  min-width: 360px;
+  max-width: ${mobile};
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: ${tablet}) {
+    max-width: none;
+    width: ${tablet};
+  }
+
+  @media screen and (min-width: ${desktop}) {
+    width: ${desktop};
+  }
+`;
+
+export const MenuContainer = styled.div`
+  position: absolute;
+  z-index: 4;
+  top: 36px;
   right: 20px;
   width: calc(100% - 40px);
   height: calc(100vh - 60px);

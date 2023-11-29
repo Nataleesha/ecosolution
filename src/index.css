@@ -25,6 +25,10 @@ body {
   padding: 0;
 }
 
+.no-overflow {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
