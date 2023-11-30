@@ -5,6 +5,15 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 36px;
+
+  @media screen and (min-width: ${tablet}) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: ${desktop}) {
+    margin-bottom: 120px;
+  }
 `;
 
 export const Title = styled.h2`
