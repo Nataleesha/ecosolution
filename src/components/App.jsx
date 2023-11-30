@@ -1,6 +1,7 @@
 import Header from "src/components/Header/Header";
 import Main from "src/components/Main/Main";
 import About from "src/components/About/About";
+import Electricity from "./Electricity/Electricity";
 
 import { Container } from "./App.styled";
 
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <Main />
       <About />
+      <Electricity />
     </Container>
   );
 };

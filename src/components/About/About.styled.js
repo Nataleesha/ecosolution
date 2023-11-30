@@ -106,6 +106,11 @@ export const GridItem = styled.div`
     @media screen and (min-width: ${tablet}) {
       display: block;
       grid-area: 1 / 3 / 2 / 5;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   &:nth-child(4) {
@@ -115,6 +120,11 @@ export const GridItem = styled.div`
     @media screen and (min-width: ${tablet}) {
       display: block;
       grid-area: 2 / 1 / 3 / 3;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   &:nth-child(5) {
