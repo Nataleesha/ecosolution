@@ -1,5 +1,6 @@
-import Header from "./Header/Header";
-import Main from "./Main/Main";
+import Header from "src/components/Header/Header";
+import Main from "src/components/Main/Main";
+import About from "src/components/About/About";
 
 import { Container } from "./App.styled";
 
@@ -8,6 +9,7 @@ const App = () => {
     <Container>
       <Header />
       <Main />
+      <About />
     </Container>
   );
 };
