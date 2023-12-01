@@ -1,7 +1,17 @@
 import { styled } from "styled-components";
 import { tablet, desktop } from "src/variables/breakpoints";
 
-export const Section = styled.section``;
+export const Section = styled.section`
+  margin-bottom: 36px;
+
+  @media screen and (min-width: ${tablet}) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: ${desktop}) {
+    margin-bottom: 120px;
+  }
+`;
 
 export const Head = styled.div`
   display: flex;

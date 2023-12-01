@@ -1,12 +1,39 @@
-import { SlideCard } from "./Slide.styled";
+import {
+  SlideCard,
+  ImageHolder,
+  Info,
+  Name,
+  Type,
+  Text,
+  Link,
+} from "./Slide.styled";
 import PropTypes from "prop-types";
 
-const Slide = ({ image }) => {
+import ArrowLink from "src/assets/icons/arrow-link.svg?react";
+import ArrowLinkHover from "src/assets/icons/arrow-link-hover.svg?react";
+
+const Slide = ({ slide }) => {
   return (
     <SlideCard>
-      <div>
-        <img src={image} />
-      </div>
+      <ImageHolder>
+        <img src={slide.img} />
+      </ImageHolder>
+      <Info>
+        <Name>
+          <Text>
+            <p>{slide.location}</p>
+            <p>{slide.name}</p>
+          </Text>
+          <Link href="#">
+            <ArrowLink className="link" />
+            <ArrowLinkHover className="link-hover" />
+          </Link>
+        </Name>
+        <Type>
+          <p>{slide.type}</p>
+          <p>{slide.date}</p>
+        </Type>
+      </Info>
     </SlideCard>
   );
 };
@@ -14,5 +41,5 @@ const Slide = ({ image }) => {
 export default Slide;
 
 Slide.propTypes = {
-  image: PropTypes.string.isRequired,
+  slide: PropTypes.object.isRequired,
 };

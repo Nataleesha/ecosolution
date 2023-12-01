@@ -66,7 +66,19 @@ const Cases = () => {
           },
         },
         1280: {
+          slidesPerView: 2,
           spaceBetween: 48,
+          pagination: {
+            formatFractionCurrent: (number) => {
+              if (number < totalSlides) {
+                return formattedPage(number + 1);
+              } else if (number === totalSlides) {
+                return formattedPage(1);
+              } else {
+                return formattedPage(number);
+              }
+            },
+          },
         },
       },
     };
@@ -98,10 +110,10 @@ const Cases = () => {
         speed="500"
         css-mode="true"
       >
-        {data.map((slide, i) => {
+        {data.map((slide) => {
           return (
-            <swiper-slide key={i}>
-              <Slide image={slide.img} />
+            <swiper-slide key={slide.location}>
+              <Slide slide={slide} />
             </swiper-slide>
           );
         })}
