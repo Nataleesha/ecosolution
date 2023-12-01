@@ -4,14 +4,17 @@ import { tablet, desktop } from "src/variables/breakpoints";
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
+  margin-bottom: 36px;
 
   @media screen and (min-width: ${tablet}) {
+    margin-bottom: 100px;
     flex-direction: row;
     gap: 24px;
   }
 
   @media screen and (min-width: ${desktop}) {
-    gap: 185px;
+    margin-bottom: 120px;
+    gap: 48px;
   }
 `;
 
@@ -27,11 +30,11 @@ export const TitleMobile = styled.h2`
 
 export const Faq = styled.div`
   @media screen and (min-width: ${tablet}) {
-    width: 342px;
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   @media screen and (min-width: ${desktop}) {
-    width: 596px;
+    flex-basis: calc((100% - 48px) / 2);
   }
 `;
 
@@ -39,7 +42,15 @@ export const SideContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+
+  @media screen and (min-width: ${tablet}) {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  @media screen and (min-width: ${desktop}) {
+    flex-basis: calc((100% - 48px) / 2);
+  }
 `;
 
 export const TitleTablet = styled.h2`
@@ -52,6 +63,7 @@ export const TitleTablet = styled.h2`
   }
 
   @media screen and (min-width: ${desktop}) {
+    width: 398px;
     font-size: 48px;
     line-height: 48px;
   }

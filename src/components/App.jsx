@@ -4,6 +4,7 @@ import About from "src/components/About/About";
 import Electricity from "./Electricity/Electricity";
 import Cases from "src/components/Cases/Cases";
 import Questions from "src/components/Questions/Questions";
+import Contacts from "src/components/Contacts/Contacts";
 
 import { Container } from "./App.styled";
 
@@ -16,6 +17,7 @@ const App = () => {
       <Electricity />
       <Cases />
       <Questions />
+      <Contacts />
     </Container>
   );
 };

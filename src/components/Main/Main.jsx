@@ -19,7 +19,7 @@ const Main = () => {
   return (
     <Section>
       <Description>
-        <Header>RENEWABLE ENERGY For any task</Header>
+        <Header id="main">RENEWABLE ENERGY For any task</Header>
         <Info>
           <Text>
             Development and implementation of renewable non-polluting energy
