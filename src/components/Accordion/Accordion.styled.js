@@ -8,6 +8,10 @@ export const Card = styled.div`
   @media screen and (min-width: ${desktop}) {
     padding: 24px 0;
   }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 `;
 
 export const QuestionBlock = styled.div`
