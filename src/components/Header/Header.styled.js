@@ -5,6 +5,7 @@ export const HeaderContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9;
   width: 100%;
   padding-top: 36px;
   background-color: var(--body-background);

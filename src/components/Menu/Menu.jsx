@@ -110,5 +110,5 @@ const Menu = ({ toggleMenu }) => {
 export default Menu;
 
 Menu.propTypes = {
-  toggleMenu: PropTypes.func,
+  toggleMenu: PropTypes.func.isRequired,
 };
