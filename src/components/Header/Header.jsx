@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Menu from "src/components/Menu/Menu";
+import ContactButton from "src/components/ContactButton/ContactButton";
 
 import Logo from "src/assets/icons/logo.svg?react";
 import LogoName from "src/assets/icons/logo-name.svg?react";
@@ -57,32 +58,7 @@ const Header = () => {
             <Burger />
           </MenuButton>
           <GetInTouch>
-            Get in touch{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="15"
-              viewBox="0 0 14 15"
-              fill="none"
-            >
-              <circle cx="7" cy="7.5" r="7" fill="currentColor" />
-              <path
-                d="M9.27588 8.31006L6.99963 10.3334L4.72338 8.31006"
-                stroke="#173D33"
-                strokeWidth="0.833607"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M6.99951 4.66675L6.99951 10.2767"
-                stroke="#173D33"
-                strokeWidth="0.833607"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <ContactButton>Get in touch</ContactButton>
           </GetInTouch>
         </NavContainer>
         {isOpen ? <Menu toggleMenu={toggleMenu} /> : null}

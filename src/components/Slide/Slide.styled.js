@@ -44,6 +44,10 @@ export const Text = styled.div`
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.72px;
+
+    @media screen and (min-width: ${desktop}) {
+      max-width: 380px;
+    }
   }
 `;
 
