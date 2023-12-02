@@ -1,4 +1,5 @@
 import Socials from "src/components/Socials/Socials";
+import ContactForm from "src/components/ContactForm/ContactForm";
 
 import {
   Section,
@@ -56,7 +57,7 @@ const ContactUs = () => {
             </SocialHolder>
           </Contact>
         </Contacts>
-        <Form>Form</Form>
+        <ContactForm />
       </Container>
     </Section>
   );

@@ -1,3 +1,5 @@
+import ActionButton from "src/components/ActionButton/ActionButton";
+
 import {
   Section,
   Description,
@@ -5,14 +7,12 @@ import {
   Info,
   Text,
   LinkHolder,
-  Link,
   Contacts,
   ContactItem,
   ImageHolder,
   Image,
 } from "./Main.styled";
 
-import Arrow from "src/assets/icons/arrow-right.svg?react";
 import image from "src/assets/images/turbine1.jpg";
 
 const Main = () => {
@@ -27,9 +27,7 @@ const Main = () => {
             biomass
           </Text>
           <LinkHolder>
-            <Link href="#">
-              Learn More <Arrow />
-            </Link>
+            <ActionButton>Learn More</ActionButton>
           </LinkHolder>
         </Info>
       </Description>
