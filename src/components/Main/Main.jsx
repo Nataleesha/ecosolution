@@ -6,7 +6,7 @@ import {
   Header,
   Info,
   Text,
-  LinkHolder,
+  ButtonHolder,
   Contacts,
   ContactItem,
   ImageHolder,
@@ -26,9 +26,9 @@ const Main = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </Text>
-          <LinkHolder>
-            <ActionButton>Learn More</ActionButton>
-          </LinkHolder>
+          <ButtonHolder>
+            <ActionButton type="button">Learn More</ActionButton>
+          </ButtonHolder>
         </Info>
       </Description>
       <Contacts>
