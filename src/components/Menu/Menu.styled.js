@@ -53,11 +53,6 @@ export const MenuContainer = styled.div`
 
   @media screen and (min-width: ${tablet}) {
     width: 320px;
-    max-height: 700px;
-  }
-
-  @media screen and (min-width: ${desktop}) {
-    max-height: 875px;
   }
 `;
 

@@ -28,6 +28,7 @@ const Cases = () => {
   useEffect(() => {
     const swiperContainer = swiperRef.current;
     const params = {
+      keyboard: true,
       loop: true,
       navigation: {
         enabled: true,
@@ -108,7 +109,6 @@ const Cases = () => {
         init="false"
         slides-per-view="2"
         speed="500"
-        css-mode="true"
       >
         {data.map((slide) => {
           return (
