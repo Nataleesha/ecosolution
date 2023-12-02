@@ -1,3 +1,5 @@
+import Socials from "src/components/Socials/Socials";
+
 import {
   Section,
   Title,
@@ -6,15 +8,13 @@ import {
   Contact,
   Tel,
   Address,
-  Socials,
+  SocialHolder,
   Form,
 } from "./ContactUs.styled";
 
 import Phone from "src/assets/icons/call.svg?react";
 import Mail from "src/assets/icons/mail.svg?react";
 import Map from "src/assets/icons/map.svg?react";
-import Facebook from "src/assets/icons/facebook.svg?react";
-import Instagram from "src/assets/icons/instagram.svg?react";
 
 const ContactUs = () => {
   return (
@@ -51,22 +51,9 @@ const ContactUs = () => {
           </Contact>
           <Contact>
             <p>Social Networks:</p>
-            <Socials>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook />
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram />
-              </a>{" "}
-            </Socials>
+            <SocialHolder>
+              <Socials />
+            </SocialHolder>
           </Contact>
         </Contacts>
         <Form>Form</Form>

@@ -2,16 +2,18 @@ import { styled } from "styled-components";
 import { tablet, desktop } from "src/variables/breakpoints";
 
 export const Section = styled.section`
+  padding-bottom: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid var(--primary-color);
 
   @media screen and (min-width: ${tablet}) {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   @media screen and (min-width: ${desktop}) {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 `;
 
@@ -112,15 +114,15 @@ export const Address = styled.span`
   }
 `;
 
-export const Socials = styled.div`
-  display: flex;
-  gap: 8px;
-
+export const SocialHolder = styled.div`
   & svg {
-    margin: 12px;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
 
     @media screen and (min-width: ${desktop}) {
       margin: 0;
+      margin-top: 16px;
     }
   }
 `;

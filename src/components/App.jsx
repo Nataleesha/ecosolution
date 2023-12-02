@@ -5,6 +5,7 @@ import Electricity from "./Electricity/Electricity";
 import Cases from "src/components/Cases/Cases";
 import Questions from "src/components/Questions/Questions";
 import ContactUs from "src/components/ContactUs/ContactUs";
+import Footer from "src/components/Footer/Footer";
 
 import { Container } from "./App.styled";
 
@@ -18,6 +19,7 @@ const App = () => {
       <Cases />
       <Questions />
       <ContactUs />
+      <Footer />
     </Container>
   );
 };

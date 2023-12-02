@@ -61,9 +61,23 @@ export const MenuContainer = styled.div`
   }
 `;
 
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
 export const NavMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   height: 100%;
+`;
+
+export const MenuList = styled.ul`
+  border-top: 1px solid #fff;
+  padding-top: 24px;
 `;
 
 export const MenuItem = styled.li`
@@ -109,8 +123,10 @@ export const CloseButton = styled.button`
   }
 `;
 
-export const Line = styled.hr`
-  margin: 0 0 16px 0;
+export const SocialHolder = styled.div`
+  & a {
+    color: #fff;
+  }
 `;
 
 export const Socials = styled.ul`

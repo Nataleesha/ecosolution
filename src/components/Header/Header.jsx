@@ -1,16 +1,13 @@
 import { useState, useEffect } from "react";
 import Menu from "src/components/Menu/Menu";
 import ContactButton from "src/components/ContactButton/ContactButton";
+import MainLogo from "src/components/MainLogo/MainLogo";
 
-import Logo from "src/assets/icons/logo.svg?react";
-import LogoName from "src/assets/icons/logo-name.svg?react";
-import LogoText from "src/assets/icons/logo-text.svg?react";
 import Burger from "src/assets/icons/menu.svg?react";
 
 import {
   HeaderContainer,
   Container,
-  LogoContainer,
   NavContainer,
   MenuButton,
   GetInTouch,
@@ -50,9 +47,7 @@ const Header = () => {
   return (
     <HeaderContainer className={`${white ? "white" : ""}`}>
       <Container>
-        <LogoContainer>
-          <Logo /> <LogoName /> <LogoText />
-        </LogoContainer>
+        <MainLogo />
         <NavContainer>
           <MenuButton type="button" onClick={toggleMenu}>
             <Burger />

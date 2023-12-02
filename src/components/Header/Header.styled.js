@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { mobile, tablet, desktop } from "src/variables/breakpoints";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   position: fixed;
   top: 0;
   left: 0;
@@ -33,17 +33,6 @@ export const Container = styled.div`
 
   @media screen and (min-width: ${desktop}) {
     width: ${desktop};
-  }
-`;
-
-export const LogoContainer = styled.div`
-  color: var(--primary-dark-color);
-  transition: 0.3s ease;
-  cursor: pointer;
-
-  &:hover {
-    transition: 0.3s ease;
-    color: var(--primary-color);
   }
 `;
 
