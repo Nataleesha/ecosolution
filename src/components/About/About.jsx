@@ -20,7 +20,7 @@ import worker from "src/assets/images/man-worker-field-by-solar-panels 1.jpg";
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Description>
         <Title>Main values of our company</Title>
         <InfoHolder>

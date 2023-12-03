@@ -52,7 +52,14 @@ const Header = () => {
           <MenuButton type="button" onClick={toggleMenu}>
             <Burger />
           </MenuButton>
-          <GetInTouch>
+          <GetInTouch
+            onClick={() => {
+              window.scroll({
+                top: document.getElementById("contact").offsetTop - 120,
+                behavior: "smooth",
+              });
+            }}
+          >
             <ContactButton>Get in touch</ContactButton>
           </GetInTouch>
         </NavContainer>

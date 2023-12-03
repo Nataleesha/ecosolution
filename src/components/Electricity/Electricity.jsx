@@ -24,7 +24,7 @@ const Electricity = () => {
   }
 
   return (
-    <Section>
+    <Section id="service">
       <Title>Electricity we produced for all time</Title>
       <Line></Line>
       <Counter>

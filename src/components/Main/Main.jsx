@@ -17,9 +17,9 @@ import image from "src/assets/images/turbine1.jpg";
 
 const Main = () => {
   return (
-    <Section>
+    <Section id="main">
       <Description>
-        <Header id="main">RENEWABLE ENERGY For any task</Header>
+        <Header>RENEWABLE ENERGY For any task</Header>
         <Info>
           <Text>
             Development and implementation of renewable non-polluting energy
@@ -27,7 +27,17 @@ const Main = () => {
             biomass
           </Text>
           <ButtonHolder>
-            <ActionButton type="button">Learn More</ActionButton>
+            <ActionButton
+              type="button"
+              onClick={() => {
+                window.scroll({
+                  top: document.getElementById("cases").offsetTop - 120,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Learn More
+            </ActionButton>
           </ButtonHolder>
         </Info>
       </Description>

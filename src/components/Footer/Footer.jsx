@@ -24,7 +24,15 @@ const Footer = () => {
         </LeftContainer>
         <RightContainer>
           <Socials />
-          <ButtonUp className="big">
+          <ButtonUp
+            className="big"
+            onClick={() => {
+              window.scroll({
+                top: document.getElementById("main").offsetTop - 120,
+                behavior: "smooth",
+              });
+            }}
+          >
             <Up className="up" />
             <UpHover className="up-hover" />
           </ButtonUp>

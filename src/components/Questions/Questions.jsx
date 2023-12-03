@@ -21,7 +21,7 @@ const Questions = () => {
   };
 
   return (
-    <Section>
+    <Section id="questions">
       <TitleMobile>Frequently Asked Questions</TitleMobile>
       <Faq>
         {data &&
@@ -40,7 +40,16 @@ const Questions = () => {
         <TitleTablet>Frequently Asked Questions</TitleTablet>
         <Contact>
           <p>Didn&apos;t find the answer to your question?</p>
-          <ContactButton>Contact Us</ContactButton>
+          <ContactButton
+            onClick={() => {
+              window.scroll({
+                top: document.getElementById("contact").offsetTop - 120,
+                behavior: "smooth",
+              });
+            }}
+          >
+            Contact Us
+          </ContactButton>
         </Contact>
       </SideContainer>
     </Section>

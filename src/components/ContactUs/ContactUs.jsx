@@ -10,7 +10,6 @@ import {
   Tel,
   Address,
   SocialHolder,
-  Form,
 } from "./ContactUs.styled";
 
 import Phone from "src/assets/icons/call.svg?react";
@@ -19,7 +18,7 @@ import Map from "src/assets/icons/map.svg?react";
 
 const ContactUs = () => {
   return (
-    <Section>
+    <Section id="contact">
       <Title>Contact us</Title>
       <Container>
         <Contacts>

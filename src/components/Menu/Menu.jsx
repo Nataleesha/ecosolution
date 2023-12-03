@@ -44,37 +44,81 @@ const Menu = ({ toggleMenu }) => {
               </CloseButton>
               <MenuList>
                 <MenuItem>
-                  <Link>
+                  <Link
+                    onClick={() => {
+                      window.scroll({
+                        top: document.getElementById("main").offsetTop - 120,
+                        behavior: "smooth",
+                      });
+                      toggleMenu();
+                    }}
+                  >
                     Main <Arrow />
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link>
+                  <Link
+                    onClick={() => {
+                      window.scroll({
+                        top: document.getElementById("about").offsetTop - 120,
+                        behavior: "smooth",
+                      });
+                      toggleMenu();
+                    }}
+                  >
                     About <Arrow />
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link>
+                  <Link
+                    onClick={() => {
+                      window.scroll({
+                        top: document.getElementById("service").offsetTop - 120,
+                        behavior: "smooth",
+                      });
+                      toggleMenu();
+                    }}
+                  >
                     Service <Arrow />
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link>
+                  <Link
+                    onClick={() => {
+                      window.scroll({
+                        top: document.getElementById("cases").offsetTop - 120,
+                        behavior: "smooth",
+                      });
+                      toggleMenu();
+                    }}
+                  >
                     Cases <Arrow />
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link>
+                  <Link
+                    onClick={() => {
+                      window.scroll({
+                        top:
+                          document.getElementById("questions").offsetTop - 120,
+                        behavior: "smooth",
+                      });
+                      toggleMenu();
+                    }}
+                  >
                     FAQ <Arrow />
                   </Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link>
-                    Customers <Arrow />
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link>
+                  <Link
+                    onClick={() => {
+                      window.scroll({
+                        top: document.getElementById("contact").offsetTop - 120,
+                        behavior: "smooth",
+                      });
+                      toggleMenu();
+                    }}
+                  >
                     Contact Us <Arrow />
                   </Link>
                 </MenuItem>

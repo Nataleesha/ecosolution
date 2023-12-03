@@ -1,9 +1,9 @@
 import { Button } from "./ContactButton.styled";
 
 // eslint-disable-next-line react/prop-types
-const ContactButton = ({ children }) => {
+const ContactButton = ({ children, onClick }) => {
   return (
-    <Button>
+    <Button type="button" onClick={onClick}>
       {children}{" "}
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -89,7 +89,7 @@ const Cases = () => {
   }, []);
 
   return (
-    <Section>
+    <Section id="cases">
       <Head>
         <Title>Successful cases of our company</Title>
         <Pagination>
